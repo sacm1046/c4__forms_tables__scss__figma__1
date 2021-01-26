@@ -1,0 +1,35 @@
+.btn__container{
+    width: 100%;
+    padding: 10px;
+    & > button {
+        width: 100%;
+        height: 30px;
+        color: $ligth;
+        border: none;
+        cursor: pointer;
+        outline: 0;
+    }
+}
+.btn__primary {
+    background-color: $primary;
+    transition: $transition;
+    &:hover{
+        background-color: darken($color: $primary, $amount: 5)
+    }
+}
+
+.btn__success {
+    background-color: $success;
+    transition: $transition;
+    &:hover{
+        background-color: darken($color: $success, $amount: 5)
+    }
+}
+
+.btn__danger {
+    background-color: $danger;
+    transition: $transition;
+    &:hover{
+        background-color: darken($color: $danger, $amount: 5)
+    }
+}

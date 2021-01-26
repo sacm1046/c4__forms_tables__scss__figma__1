@@ -1,0 +1,56 @@
+.table {
+    width: 100%;
+    border: none;
+    border-collapse: collapse;
+    thead{
+        th{
+            padding: 5px 0;
+            border-right: 1px solid $ligth;
+            text-align: center;
+            color: $ligth;
+            background-color: $primary;
+            height: 43px;
+        }
+        th:last-child{
+            border-right: 1px solid $primary;
+        }
+    }
+    tbody{
+        th, td{
+            height: 30px;
+            text-align: center;
+            border: 1px solid $primary;
+        }
+        td {
+            & > div {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                & > span {
+                    margin: 0 5px;
+                    cursor: pointer;
+                    & > svg {
+                        transform: scale(1);
+                        transition: $transition;
+                        &:hover{
+                            transform: scale(1.05);
+                        }
+                    }
+                }
+            }
+            
+        }
+    }
+}
+
+@for $n from 1 to 11{
+    .table__row__#{$n} {
+        width: $n*10%;
+    }
+    .table__head__#{$n} {
+        width: $n*10%;
+    }
+}
+
+
+

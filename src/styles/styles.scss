@@ -1,0 +1,12 @@
+@import './base/settings';
+@import './base/base';
+
+//shared components
+@import './components/shared/navbar';
+@import './components/shared/footer';
+@import './components/shared/form';
+@import './components/shared/button';
+@import './components/shared/table';
+
+//pages components
+@import './components/pages/home';

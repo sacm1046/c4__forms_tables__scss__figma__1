@@ -1,0 +1,44 @@
+.form{
+    border: 1px solid $primary;
+    max-width: 400px;
+    margin: 0;
+    & > h5{
+        margin: 0;
+        padding: 10px;
+        margin-bottom: 10px;
+        font-size: 20px;
+        color: $ligth;
+        background-color: $primary;
+    }
+}
+
+.form__group{
+    margin: 0;
+    margin-bottom: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+
+    & > label {
+        margin: 0;
+        margin-bottom: 5px;
+        font-size: 12px;
+        font-weight: 600;
+        color: $dark;
+        transition: $transition;
+    }
+
+    & > input, & > textarea{
+        font-family: inherit;
+        border: none;
+        border-bottom: 1px solid $primary;
+        color: $primary;
+        outline: none;
+        transition: $transition;
+        &:focus{
+            border-bottom: 1px solid $success;
+            color: $success;
+        }
+    }
+}
+

@@ -1,0 +1,14 @@
+.navbar{
+    width: 100%;
+    background-color: $primary;
+}
+
+.navbar__brand{
+    padding: 20px;
+    & > a {
+        font-weight: 550;
+        font-size: 25px;
+        text-decoration: none;
+        color: white;
+    }
+}

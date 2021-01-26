@@ -1,0 +1,10 @@
+.footer{
+    background-color: $primary;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    & > small {
+        color: white;
+        padding: 8px;
+    }
+}
